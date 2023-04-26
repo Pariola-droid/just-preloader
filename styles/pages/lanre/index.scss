@@ -1,0 +1,82 @@
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: 30;
+  height: 100%;
+  width: 100%;
+  background-color: #05ff00;
+  @include grid;
+
+  //   clip-path: polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%);
+
+  &__wrapper {
+    width: 100%;
+    max-width: 1200px;
+    @include grid;
+  }
+
+  &__container {
+    width: fit-content;
+    height: fit-content;
+
+    &--counter {
+      top: -10.5rem;
+      right: -9rem;
+      z-index: 10;
+
+      & p {
+        letter-spacing: -0.02em;
+        line-height: 0.9;
+        z-index: 10;
+        text-align: left;
+        font-size: 24rem;
+        font-family: 'Anton', sans-serif;
+      }
+    }
+
+    &-middle {
+      height: fit-content;
+      width: 40rem;
+      @include flex(unset, flex-start);
+      @extend %flexCol;
+
+      &--image {
+        width: 100%;
+        height: 45rem;
+        overflow: hidden;
+
+        & img {
+          @extend %img;
+        }
+      }
+
+      &--title {
+        width: 100%;
+        overflow: hidden;
+        background-color: #fff;
+
+        & h1 {
+          font-size: 11.8rem;
+          font-family: 'BebasNeue', sans-serif;
+          line-height: 0.9;
+          text-align: center;
+        }
+      }
+    }
+
+    &--caption {
+      bottom: 0;
+      left: -31.7rem;
+      max-width: 28rem;
+      z-index: 10;
+
+      & p {
+        font-size: 2rem;
+        line-height: 1.2;
+        text-align: left;
+      }
+    }
+  }
+}

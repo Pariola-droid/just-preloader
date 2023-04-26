@@ -13,11 +13,10 @@
 @import 'shared/repeat';
 @import 'shared/fonts';
 
-@import 'components/button';
+// Components::
 
-// Common Components::
-@import 'components/common/navbar.scss';
-@import 'components/common/header.scss';
+// Common::
+@import 'components/common';
 
 // Pages::
 @import 'pages/lanre';

@@ -47,31 +47,35 @@
   max-width: 130rem;
   width: 90%;
 
-  @include media("<=phone") {
+  @include media('<=phone') {
     width: calc(100% - 5rem);
   }
 }
 
+%flexCol {
+  flex-direction: column;
+}
+
 %desktop {
-  @include media("<=phone") {
+  @include media('<=phone') {
     display: none;
   }
 }
 
 %desktop-tab {
-  @include media("<=tablet") {
+  @include media('<=tablet') {
     display: none;
   }
 }
 
 %tablet {
-  @include media(">tablet") {
+  @include media('>tablet') {
     display: none;
   }
 }
 
 %mobile {
-  @include media(">phone") {
+  @include media('>phone') {
     display: none;
   }
 }

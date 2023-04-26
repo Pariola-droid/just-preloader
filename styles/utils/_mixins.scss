@@ -108,10 +108,6 @@
   align-items: $ai;
 }
 
-@mixin flex_col() {
-  flex-direction: column;
-}
-
 @mixin grid() {
   display: grid;
   place-items: center;

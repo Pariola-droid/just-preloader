@@ -2,10 +2,17 @@
   height: 100vh;
   width: 100%;
   @include grid;
+  background-color: #000;
+
+  & span {
+    color: #fff;
+  }
 
   & h1 {
     @extend %title-120;
     font-family: 'Anton', sans-serif;
-    background-color: red;
+    text-transform: uppercase;
+    letter-spacing: 0.05px;
+    color: #05ff00;
   }
 }
