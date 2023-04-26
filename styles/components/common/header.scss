@@ -1,0 +1,11 @@
+.cm_header {
+  height: 100vh;
+  width: 100%;
+  @include grid;
+
+  & h1 {
+    @extend %title-120;
+    font-family: 'Anton', sans-serif;
+    background-color: red;
+  }
+}

@@ -1,0 +1,17 @@
+[data-animation='header'] span.word {
+  overflow-y: hidden;
+  position: relative;
+}
+
+span.word_wrap {
+  overflow: hidden;
+  display: inline-block;
+}
+
+.abs {
+  position: absolute;
+}
+
+.rel {
+  position: relative;
+}

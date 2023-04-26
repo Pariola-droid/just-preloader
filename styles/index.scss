@@ -1,15 +1,23 @@
-@import "utils/breakpoints";
-@import "utils/mixins";
-@import "utils/functions";
+@import 'utils/breakpoints';
+@import 'utils/mixins';
+@import 'utils/functions';
 
-@import "core/variables";
-@import "core/reset";
-@import "core/globals";
-@import "core/fonts";
+@import 'core/variables';
+@import 'core/reset';
+@import 'core/globals';
+@import 'core/fonts';
 
-@import "shared/links";
-@import "shared/layout";
-@import "shared/sections";
-@import "shared/fonts";
+@import 'shared/links';
+@import 'shared/layout';
+@import 'shared/sections';
+@import 'shared/repeat';
+@import 'shared/fonts';
 
-@import "components/button";
+@import 'components/button';
+
+// Common Components::
+@import 'components/common/navbar.scss';
+@import 'components/common/header.scss';
+
+// Pages::
+@import 'pages/lanre';

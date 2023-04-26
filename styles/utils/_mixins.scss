@@ -45,7 +45,7 @@
     @content;
   }
 
-  @include media(">tablet") {
+  @include media('>tablet') {
     @content;
   }
 }
@@ -58,7 +58,7 @@
 
   @supports (aspect-ratio: calc($width / $height)) {
     &:after {
-      content: "";
+      content: '';
       display: inline-block;
       padding-top: calc($height / $width) * 100%;
       width: 100%;
@@ -97,7 +97,22 @@
     }
   }
 
-  @include media("<=tablet") {
+  @include media('<=tablet') {
     margin-bottom: $margin;
   }
+}
+
+@mixin flex($jc, $ai) {
+  display: flex;
+  justify-content: $jc;
+  align-items: $ai;
+}
+
+@mixin flex_col() {
+  flex-direction: column;
+}
+
+@mixin grid() {
+  display: grid;
+  place-items: center;
 }
