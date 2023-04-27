@@ -9,8 +9,6 @@
   background-color: #05ff00;
   @include grid;
 
-  //   clip-path: polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%);
-
   &__wrapper {
     width: 100%;
     max-width: 1200px;
