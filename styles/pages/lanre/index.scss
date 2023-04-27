@@ -47,6 +47,15 @@
         height: 45rem;
         overflow: hidden;
 
+        &::after {
+          position: absolute;
+          content: '';
+          width: 100%;
+          background-color: #05ff00;
+          bottom: 0;
+          left: 0;
+        }
+
         & img {
           @extend %img;
         }
@@ -54,8 +63,19 @@
 
       &--title {
         width: 100%;
+        height: auto;
         overflow: hidden;
-        background-color: #fff;
+
+        &::after {
+          position: absolute;
+          content: '';
+          width: 100%;
+          height: 100%;
+          background-color: #fff;
+          top: 0;
+          left: 0;
+          z-index: -1;
+        }
 
         & h1 {
           font-size: 11.8rem;
@@ -67,10 +87,12 @@
     }
 
     &--caption {
-      bottom: 0;
+      bottom: -50px;
       left: -31.7rem;
       max-width: 28rem;
       z-index: 10;
+      padding-bottom: 50px;
+      overflow: hidden;
 
       & p {
         font-size: 2rem;
